@@ -1,2 +1,0 @@
-# getdally.com
-getdally.com
