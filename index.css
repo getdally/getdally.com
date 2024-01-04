@@ -18,7 +18,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -42,42 +41,63 @@ table {
 	border-spacing: 0;
 }
 
-body {
-	background: #0f172a;
-	font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	line-height: 1.5;
-	font-size: 1.25rem;
+html {
+	min-height: 100%;
 }
 
-div {
-	width: calc(100vw - 40px);
-	height: calc(100vh - 40px);
-	max-width: 480px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate3d(-50%, -50%, 0);
+body {
+	background-color: #020617;
+	background-image: linear-gradient(to bottom, #020617, #0f172a);
+	font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 1.25rem;
+	line-height: 1.25;
+	color: #94a3b8;
+	color: #fff;
+	text-align: center;
+	height: 100%;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 0 2rem;
 }
 
-img {
-	width: 100%;
-	max-width: 300px;
+h1 {
+	font-size: 2rem;
+	font-weight: 900;
 	margin-bottom: 1rem;
 }
 
 p {
 	color: #94a3b8;
-	text-align: center;
 }
 
-p:not(:last-child) {
-	margin-bottom: 1rem;
+img {
+	width: 100px;
+	margin: 2rem auto;
+	display: block;
+	position: absolute;
+	top: 2rem;
 }
 
-em {
-	font-style: italic;
+@media (min-width: 640px) {
+	h1 {
+		font-size: 2.75rem;
+		margin-bottom: 1.25rem;
+	}
+}
+
+@media (min-width: 768px) {
+	h1 {
+		font-size: 3.5rem;
+		margin-bottom: 1.5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	h1 {
+		font-size: 4rem;
+		margin-bottom: 2rem;
+	}
 }
